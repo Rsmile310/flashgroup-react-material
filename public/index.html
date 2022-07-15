@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+    />
+    <meta name="keywords" content="FlashGroup, react, material,application" />
+    <meta name="author" content="FlashGroup" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%PUBLIC_URL%/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%PUBLIC_URL%/favicon/favicon-16x16.png"
+    />
+
+    <meta name="theme-color" content="#000000" />
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <!-- Using Local Font -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/fonts/index.css"
+    />
+    <title>FlashGroup</title>
+    <style>
+      /* Hide scrollbar in Chrome, Safari and Opera */
+      *::-webkit-scrollbar {
+        display: none;
+      }
+      /* ::-webkit-scrollbar {
+        width: 3px;
+        margin-right: 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #aaa;
+    }
+    ::-webkit-scrollbar-track {
+        background: hsla(0,0%,100%,.1);
+    } */
+      /* Hide scrollbar for IE, Edge and Firefox */
+      body {
+        -ms-overflow-style: none; /* IE and EDGE */
+        scrollbar-width: none; /* Firefox */
+      }
+      a {
+        text-decoration: none !important;
+      }
+      a:focus {
+        outline: none !important;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      input {
+        color: rgb(197, 179, 179) !important;
+      }
+      .navbar {
+        position: absolute;
+        left: -110%;
+        top: 0;
+        width: 300px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: 1000;
+        transition: all 0.5s ease;
+      }
+      .navbar p {
+        color: rgb(99, 115, 129);
+      }
+      .navbar > a {
+        transition: "all 500ms ease";
+      }
+      .navbar > a:hover {
+        background-color: rgba(145, 158, 171, 0.08);
+      }
+      .navbar.active {
+        left: 0px;
+        transition: all 0.5s ease;
+      }
+      @keyframes animateBubble {
+        0% {
+          margin-top: 0;
+          margin-right: 0;
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.8);
+          margin-right: -4px;
+        }
+        100% {
+          margin-top: 40px;
+          margin-right: 0;
+          transform: scale(1);
+        }
+      }
+      .grad_text {
+        background: -webkit-linear-gradient(0deg, #00fbce 20%, #0066ff 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* .back>div {
+        animation: scrollUp 10s linear 1s infinite;
+      } */
+      @keyframes scrollUp {
+        from {
+          transform: translateY(0%);
+        }
+        to {
+          transform: translateY(-100%);
+        }
+      }
+      .back > div:hover {
+        animation: scrollUp 30s linear 1s infinite;
+      }
+      .animate_zoom{
+        opacity: 0;
+        animation: animateZoom 3s linear infinite alternate;
+      }
+      .delay1{
+        animation-delay: 1s;
+      }
+      .delay2{
+        animation-delay: 1.2s;
+      }
+      .delay2{
+        animation-delay: 1.3s;
+      }
+      .delay2{
+        animation-delay: 1.4s;
+      }
+      .delay2{
+        animation-delay: 1.5s;
+      }
+      @keyframes animateZoom {
+        0% {
+          transform: scale(0.6);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
