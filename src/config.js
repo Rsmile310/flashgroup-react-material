@@ -1,5 +1,5 @@
 // @mui
-import { enUS, frFR, esES } from '@mui/material/locale';
+import { enUS, frFR } from '@mui/material/locale';
 
 // LAYOUT
 // ----------------------------------------------------------------------
