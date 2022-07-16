@@ -6,6 +6,7 @@ import { Box, Typography, Stack, Grid } from "@mui/material";
 import { MotionViewport, varFade } from "../animate";
 import useLocales from "../../hooks/useLocales";
 import EcosystemConfig from "./HomeConfig";
+import { useEffect, useState } from "react";
 
 const BoxStyle = styled(Box)({
   width: "1280px",
@@ -32,11 +33,14 @@ const Card = styled(Box)({
     top: "0",
     right: "0",
     bottom: "0",
-    overflowY: "auto",
-    padding: "24px",
+    padding: "20px",
     transform: "rotateY(180deg)",
   },
-
+  "& .back>div": {
+    width: "100%",
+    height: "100%",
+    overflowY: "auto",
+  },
   "& .front>div": {
     position: "relative",
     width: "80px",
@@ -69,12 +73,35 @@ const Card = styled(Box)({
     margin: "24px auto",
   },
 });
+
 export default function Ecosystem() {
   const { translate } = useLocales();
+  const [data, setData] = useState("");
+
+  useEffect(() => {
+    // return () => clearInterval(interval);
+    setData(true);
+    let stars = document.createElement("div");
+    let solar = document.getElementById("solar");
+    stars.setAttribute("id", "stars");
+    solar.prepend(stars);
+
+    for (let i = 0; i < 200; i++) {
+      let star = document.createElement("s");
+      star.innerHTML = "&starf;";
+      let left = Math.floor(Math.random() * (100 - 0) + 0);
+      let top = Math.floor(Math.random() * (100 - 0) + 0);
+      star.style.transform = "translate(" + left + "vw," + top + "vh)";
+      star.style.transform += "scale(" + Math.random() * (2 - 1) + ")";
+      star.style.transform +=
+        "rotate(" + Math.floor(Math.random() * (90 - 0) + 0) + "deg)";
+      stars.prepend(star);
+    }
+  }, [data]);
   return (
     <BoxStyle id="services">
-      <MotionViewport>
-        <Box sx={{ mt: 4 }}>
+      <Box sx={{ mt: 4 }}>
+        <MotionViewport>
           <m.div variants={varFade().inUp}>
             <Stack direction="row" justifyContent="center">
               <Typography
@@ -103,7 +130,7 @@ export default function Ecosystem() {
               sx={{
                 color: "#AB98AE",
                 px: "8px",
-                mt: 3,
+                my: 3,
                 maxWidth: "930px",
                 mx: "auto",
               }}
@@ -111,6 +138,25 @@ export default function Ecosystem() {
               {translate("ecosystem_text1")}
             </Typography>
           </m.div>
+          <m.div variants={varFade().inDown}>
+            <div id="solar">
+              <div className="comet"></div>
+              <div id="sun"></div>
+              <div id="mercury"></div>
+              <div id="venus"></div>
+              <div id="earth"></div>
+              <div id="mars"></div>
+              <div id="jupiter"></div>
+              <div id="saturn">
+                <span></span>
+              </div>
+              <div id="uranus"></div>
+              <div id="neptune"></div>
+              <div id="pluto"></div>
+            </div>
+          </m.div>
+        </MotionViewport>
+        <MotionViewport>
           <Grid container spacing={2} sx={{ mt: 5 }}>
             {EcosystemConfig.map((data, index) => (
               <Grid key={index} item xs={12} sm={6} md={4}>
@@ -149,19 +195,21 @@ export default function Ecosystem() {
                       )}
                     </Box>
                     <Box className="back">
-                      <Box>
-                        <Typography variant="h4" color="white">
-                          {data.name}
-                        </Typography>
-                        <Typography
-                          variant="body2"
-                          fontSize="16px"
-                          color="#AB98AE"
-                          textAlign="left"
-                          dangerouslySetInnerHTML={{
-                            __html: translate(data.desc),
-                          }}
-                        />
+                      <Box p={1}>
+                        <Box>
+                          <Typography variant="h4" color="white">
+                            {data.name}
+                          </Typography>
+                          <Typography
+                            variant="body2"
+                            fontSize="16px"
+                            color="#AB98AE"
+                            textAlign="left"
+                            dangerouslySetInnerHTML={{
+                              __html: translate(data.desc),
+                            }}
+                          />
+                        </Box>
                       </Box>
                     </Box>
                   </Card>
@@ -169,8 +217,8 @@ export default function Ecosystem() {
               </Grid>
             ))}
           </Grid>
-        </Box>
-      </MotionViewport>
+        </MotionViewport>
+      </Box>
     </BoxStyle>
   );
 }

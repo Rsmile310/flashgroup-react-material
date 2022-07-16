@@ -1,0 +1,839 @@
+:root {
+  --beige: #f3c687;
+  --blueGrey: #3c4e7f;
+  --blueLight: #8beaf3;
+  --blueMet: #485881;
+  --brown: #a0754b;
+  --darkPink: #940670;
+  --darkPurple: #662d90;
+  --dodgerblue: #1e90ff;
+  --grey: #292829;
+  --orange: #f5a14f;
+  --khaki: #f0e68c;
+  --pink: #ffc0cb;
+  --pinkDark: #c56a9c;
+  --indigo: #1b1464;
+  --red: #9c3f3f;
+  --redish: #c74c43;
+  --springgreen: #00ff7f;
+  --tea: #0b8429;
+  --white: #fff;
+  --whiteOpacity: #ffffff30;
+  --whiteOpacity75: #ffffff75;
+  --timeSolar: 1s * 1.618033;
+}
+
+s {
+  text-decoration: none;
+}
+
+#solar {
+  /* background-color: var(--indigo); */
+  /* background: radial-gradient(circle at 50% 50%, var(--indigo), transparent),
+    radial-gradient(circle at 50% 80%, var(--darkPink), transparent 33%),
+    radial-gradient(circle at 80% 20%, var(--dodgerblue), transparent 33%),
+    radial-gradient(circle at 0% 20%, var(--indigo), transparent 33%),
+    radial-gradient(circle at -15% -15%, var(--darkPurple), var(--indigo)); */
+  display: grid;
+  height: 450px;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px;
+}
+#stars {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#stars s {
+  color: var(--white);
+  font-size: 1vmin;
+  opacity: 0.5;
+  position: absolute;
+}
+
+#stars > *:nth-child(2n) {
+  color: var(--pink);
+  opacity: 1;
+}
+
+#stars > *:nth-child(5n) {
+  color: var(--khaki);
+}
+
+.comet {
+  border-radius: 100%;
+  display: grid;
+  height: 0.2vmin;
+  left: 25vmin;
+  overflow: hidden;
+  place-items: center;
+  position: relative;
+  transform: rotate(-45deg);
+  width: 10vmin;
+}
+
+.comet::after {
+  animation: comet 10s 1s linear infinite;
+  background: var(--white);
+  box-shadow: 0.5vmin 0 1vmin 0.5vmin var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.3vmin;
+  position: absolute;
+  right: -100%;
+  width: 0.3vmin;
+}
+
+@keyframes comet {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 2000%;
+  }
+}
+
+#bears {
+  left: 15vmin;
+  position: absolute;
+  top: 15vmin;
+  /* transform: scale(.6); */
+}
+
+#ursaMinor {
+  display: grid;
+  height: 20vmin;
+  place-items: center;
+  position: relative;
+  transform: rotate(140deg);
+  width: 28vmin;
+}
+
+#ursaMinor s {
+  position: absolute;
+}
+
+#ursaMinor s:nth-child(1) {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  display: flex;
+  height: 1vmin;
+  justify-content: space-between;
+  position: relative;
+  transform: rotate(45deg) translate(-9vmin, 0vmin);
+  width: 4vmin;
+}
+
+#ursaMinor s:nth-child(1)::after {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.5vmin;
+  position: relative;
+  top: -0.3vmin;
+  width: 0.5vmin;
+}
+
+#ursaMinor s:nth-child(1)::before {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.8vmin;
+  position: relative;
+  top: -0.5vmin;
+  width: 0.8vmin;
+}
+
+#ursaMinor s:nth-child(2) {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.5vmin;
+  transform: translate(-1.6vmin, -3vmin);
+  width: 0.5vmin;
+}
+
+#ursaMinor s:nth-child(2)::after {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(37deg) translate(-3.2vmin, 1.2vmin);
+  width: 3.5vmin;
+}
+
+#ursaMinor s:nth-child(2)::before {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(8deg) translate(0.2vmin, 0.4vmin);
+  width: 3.5vmin;
+}
+
+#ursaMinor s:nth-child(3) {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.5vmin;
+  transform: translate(2vmin, -2.4vmin);
+  width: 0.5vmin;
+}
+
+#ursaMinor s:nth-child(3)::after {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(83deg) translate(1.4vmin, 1vmin);
+  width: 2.5vmin;
+}
+
+#ursaMinor s:nth-child(3)::before {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(-5deg) translate(0, -0.2vmin);
+  width: 5vmin;
+}
+
+#ursaMinor s:nth-child(4) {
+  background-color: var(--white);
+  border-radius: 100%;
+  height: 0.5vmin;
+  transform: translate(2.4vmin, 0.6vmin);
+  width: 0.5vmin;
+}
+
+#ursaMinor s:nth-child(4)::after {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(-4deg) translate(0vmin, 0vmin);
+  width: 5.8vmin;
+}
+
+#ursaMinor s:nth-child(4)::before {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.5vmin;
+  position: absolute;
+  transform: translate(5.6vmin, -0.4vmin);
+  width: 0.5vmin;
+}
+
+#ursaMinor s:nth-child(5) {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.8vmin;
+  position: absolute;
+  transform: translate(7vmin, -2.8vmin);
+  width: 0.8vmin;
+}
+
+#ursaMinor s:nth-child(5)::after {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(70deg) translate(1.4vmin, 1.1vmin);
+  width: 2.6vmin;
+}
+
+#ursaMajor {
+  display: grid;
+  height: 20vmin;
+  place-items: center;
+  position: relative;
+  width: 28vmin;
+}
+
+#ursaMajor s {
+  position: absolute;
+}
+
+#ursaMajor s:nth-child(1) {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  display: flex;
+  height: 1vmin;
+  justify-content: space-between;
+  position: relative;
+  transform: rotate(-15deg) translate(-10vmin, -5vmin);
+  width: 5vmin;
+}
+
+#ursaMajor s:nth-child(1)::after {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.5vmin;
+  position: relative;
+  top: -0.3vmin;
+  width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(1)::before {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.5vmin;
+  position: relative;
+  top: -0.3vmin;
+  width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(2) {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.5vmin;
+  transform: translate(-4vmin, -2vmin);
+  width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(2)::after {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(12deg) translate(-4.8vmin, 0.6vmin);
+  width: 5vmin;
+}
+
+#ursaMajor s:nth-child(2)::before {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(8deg) translate(0vmin, 0.5vmin);
+  width: 5vmin;
+}
+
+#ursaMajor s:nth-child(3) {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.5vmin;
+  transform: translate(0.5vmin, -1.4vmin);
+  width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(3)::after {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(83deg) translate(1.4vmin, 1.8vmin);
+  width: 4vmin;
+}
+
+#ursaMajor s:nth-child(3)::before {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(-5deg) translate(0, -0.2vmin);
+  width: 8vmin;
+}
+
+#ursaMajor s:nth-child(4) {
+  background-color: var(--white);
+  border-radius: 100%;
+  height: 0.5vmin;
+  transform: translate(1vmin, 2vmin);
+  width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(4)::after {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(2deg) translate(0vmin, 0.3vmin);
+  width: 7vmin;
+}
+
+#ursaMajor s:nth-child(4)::before {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.5vmin;
+  position: absolute;
+  transform: translate(6.4vmin, 0.2vmin);
+  width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(5) {
+  background-color: var(--white);
+  border-radius: 100%;
+  content: "";
+  height: 0.5vmin;
+  position: absolute;
+  transform: translate(8.2vmin, -2vmin);
+  width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(5)::after {
+  border-top: 0.2vmin dotted var(--whiteOpacity);
+  content: "";
+  height: 0.2vmin;
+  position: absolute;
+  transform: rotate(99deg) translate(2.4vmin, 2.2vmin);
+  width: 4.5vmin;
+}
+
+#sun {
+  background: radial-gradient(circle at 60% 0%, var(--orange), #f5a14f00 45%),
+    radial-gradient(circle at 75% 75%, var(--orange), var(--khaki));
+  border-radius: 100%;
+  box-shadow: 0 0 10vmin var(--khaki);
+  height: 10vmin;
+  position: absolute;
+  width: 10vmin;
+}
+
+#mercury {
+  animation: mercury calc(var(--timeSolar) * 4) linear infinite;
+  background: radial-gradient(
+    circle at 10% 10%,
+    var(--beige),
+    var(--darkPurple)
+  );
+  border-radius: 100%;
+  height: 2vmin;
+  position: absolute;
+  transform: rotate(0deg) translate(8vmin, 0);
+  width: 2vmin;
+}
+
+@keyframes mercury {
+  100% {
+    transform: rotate(360deg) translate(8vmin, 0);
+  }
+}
+
+#venus {
+  animation: venus calc(var(--timeSolar) * 5) linear infinite;
+  background: radial-gradient(
+      circle at 75% 33%,
+      transparent 40%,
+      var(--orange) 40%,
+      var(--whiteOpacity) 50%,
+      var(--orange) 50%,
+      var(--whiteOpacity) 70%,
+      var(--whiteOpacity) 70%,
+      transparent
+    ),
+    radial-gradient(circle at 30% 30%, var(--beige), var(--beige));
+  border-radius: 100%;
+  height: 3vmin;
+  overflow: hidden;
+  position: absolute;
+  transform: rotate(0deg) translate(12vmin, 0);
+  width: 3vmin;
+}
+
+@keyframes venus {
+  100% {
+    transform: rotate(360deg) translate(12vmin, 0);
+  }
+}
+
+#earth {
+  animation: earth calc(var(--timeSolar) * 6) linear infinite;
+  background: repeating-radial-gradient(
+      circle at 75% 15%,
+      var(--whiteOpacity) 0%,
+      var(--whiteOpacity75) 15%,
+      var(--whiteOpacity) 30%
+    ),
+    radial-gradient(circle at 20% 90%, var(--tea) 15%, transparent 15%),
+    radial-gradient(circle at 45% 25%, var(--tea) 15%, transparent 15%),
+    radial-gradient(circle at 75% 0%, var(--tea) 35%, transparent 35%),
+    radial-gradient(circle at 0% 40%, var(--tea) 25%, transparent 25%),
+    radial-gradient(circle at 50% 60%, var(--tea) 20%, transparent 20%),
+    radial-gradient(circle at 60% 80%, var(--tea) 15%, transparent 15%),
+    radial-gradient(circle at 65% 65%, var(--tea) 15%, transparent 15%),
+    radial-gradient(circle at 55% 90%, var(--tea) 8%, transparent 8%),
+    radial-gradient(circle at 80% 90%, var(--tea) 5%, transparent 5%),
+    radial-gradient(circle at 85% 45%, var(--tea) 10%, transparent 10%),
+    var(--dodgerblue);
+  border-radius: 100%;
+  display: grid;
+  height: 3vmin;
+  place-items: center;
+  position: absolute;
+  transform: rotate(0deg) translate(16vmin, 0);
+  width: 3vmin;
+}
+
+@keyframes earth {
+  100% {
+    transform: rotate(360deg) translate(16vmin, 0);
+  }
+}
+
+#mars {
+  animation: mars calc(var(--timeSolar) * 7) linear infinite;
+  background: repeating-radial-gradient(
+      circle at 105% -5%,
+      transparent 76%,
+      var(--red) 82%,
+      transparent 98%
+    ),
+    radial-gradient(
+      circle at 105% -5%,
+      var(--redish),
+      var(--orange),
+      var(--red),
+      var(--redish)
+    );
+  border-radius: 100%;
+  height: 2.5vmin;
+  position: absolute;
+  transform: rotate(0deg) translate(20vmin, 0);
+  width: 2.5vmin;
+}
+
+@keyframes mars {
+  100% {
+    transform: rotate(360deg) translate(20vmin, 0);
+  }
+}
+
+#jupiter {
+  animation: jupiter calc(var(--timeSolar) * 8) linear infinite;
+  background: radial-gradient(
+    circle at 105% -50%,
+    var(--grey) 38%,
+    var(--brown) 50%,
+    var(--grey) 60%,
+    var(--blueLight),
+    var(--brown),
+    var(--blueMet),
+    var(--grey) 90%
+  );
+  border-radius: 100%;
+  height: 5vmin;
+  position: absolute;
+  transform: rotate(0deg) translate(25vmin, 0);
+  width: 5vmin;
+}
+
+@keyframes jupiter {
+  100% {
+    transform: rotate(360deg) translate(25vmin, 0);
+  }
+}
+
+#saturn {
+  animation: saturn calc(var(--timeSolar) * 9) linear infinite;
+  position: absolute;
+  transform: rotate(0deg) translate(30vmin, 0);
+}
+
+@keyframes saturn {
+  100% {
+    transform: rotate(360deg) translate(30vmin, 0);
+  }
+}
+
+#saturn span {
+  background: radial-gradient(
+    circle at 10% 10%,
+    var(--brown) 10%,
+    var(--khaki) 20%,
+    var(--orange) 30%,
+    var(--beige) 40%,
+    var(--brown) 60%,
+    var(--grey)
+  );
+  border-radius: 50%;
+  display: grid;
+  height: 4vmin;
+  place-items: center;
+  position: absolute;
+  width: 4vmin;
+}
+
+#saturn span::after,
+#saturn span::before {
+  border: 2vmin solid var(--brown);
+  border-radius: 100%;
+  box-sizing: content-box;
+  content: "";
+  height: 6vmin;
+  position: absolute;
+  transform: rotateX(50deg) rotateY(125deg);
+  width: 6vmin;
+}
+
+#saturn span::after {
+  z-index: -1;
+}
+
+#saturn span::before {
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+#uranus {
+  animation: uranus calc(var(--timeSolar) * 10) linear infinite;
+  background: radial-gradient(
+    circle at 24% -76%,
+    var(--pinkDark) 5%,
+    var(--darkPurple),
+    var(--indigo) 60%,
+    var(--darkPurple) 70%,
+    var(--blueLight) 95%
+  );
+  border-radius: 100%;
+  height: 4vmin;
+  position: absolute;
+  transform: rotate(0deg) translate(38vmin, 0);
+  width: 4vmin;
+}
+
+@keyframes uranus {
+  100% {
+    transform: rotate(360deg) translate(38vmin, 0);
+  }
+}
+
+#neptune {
+  animation: neptune calc(var(--timeSolar) * 11) linear infinite;
+  background: radial-gradient(
+    circle at 40% -40%,
+    var(--blueLight) 15%,
+    var(--blueMet),
+    var(--indigo) 65%,
+    var(--blueMet),
+    var(--blueGrey),
+    var(--indigo) 96%
+  );
+  border-radius: 100%;
+  height: 2.8vmin;
+  position: absolute;
+  transform: rotate(0deg) translate(43vmin, 0);
+  width: 2.8vmin;
+}
+
+@keyframes neptune {
+  100% {
+    transform: rotate(360deg) translate(43vmin, 0);
+  }
+}
+
+#pluto {
+  animation: pluto calc(var(--timeSolar) * 12) linear infinite;
+  background: radial-gradient(
+    circle at 10% 10%,
+    var(--beige),
+    var(--grey),
+    var(--brown)
+  );
+  border-radius: 100%;
+  height: 2vmin;
+  position: absolute;
+  transform: rotate(0deg) translate(47vmin, 0);
+  width: 2vmin;
+}
+
+@keyframes pluto {
+  100% {
+    transform: rotate(360deg) translate(47vmin, 0);
+  }
+}
+
+code {
+  bottom: 5vh;
+  color: var(--springgreen);
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  z-index: 10;
+}
+
+/* crypto price */
+:root {
+  --blue: #1855ff;
+  --white: #fff;
+  --green: #41e041;
+  --red: #ff5b5b;
+  --border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hitzone {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.card {
+  text-align: center;
+  color: var(--white);
+  margin: auto;
+  max-width: 300px;
+  background: linear-gradient(135deg, #2bb1ff 0%, var(--blue) 100%);
+  border-radius: var(--border-radius);
+  position: relative;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  z-index: 1;
+}
+
+.card:not(.expanded):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 50%);
+}
+
+.card-inner {
+  position: relative;
+}
+
+.top-data {
+  padding: 40px 25px 0;
+}
+
+.card img {
+  width: 75px;
+  height: 75px;
+  background: var(--white);
+  padding: 2px;
+  border-radius: 50px;
+}
+
+.crypto-name {
+  font-size: 26px;
+  font-weight: 300;
+  margin: 12px 0;
+}
+
+.crypto-price {
+  font-size: 20px;
+  margin: 12px 0 0;
+  font-weight: 300;
+}
+
+.crypto-price span {
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  top: -6px;
+  left: 6px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.crypto-price svg {
+  margin-right: 4px;
+}
+
+.positive {
+  background: var(--green);
+}
+
+.negative {
+  background: var(--red);
+}
+
+.expanded.card {
+  max-width: 800px;
+}
+
+.expanded .top-data {
+  padding: 40px 25px 20px;
+}
+
+.close {
+  position: absolute;
+  color: var(--white);
+  right: 10px;
+  top: 10px;
+  padding: 5px;
+  z-index: 1;
+}
+
+.chart {
+  position: relative;
+}
+
+.chart svg {
+  vertical-align: middle;
+}
+
+.chart-actions {
+  display: none;
+}
+
+.expanded .chart-actions {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.chart-actions button {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  outline: none;
+}
+
+.chart-actions button:hover,
+.chart-actions button:focus {
+  border: 1px solid var(--white);
+}
+
+.chart-actions .active {
+  background: var(--white);
+  color: var(--blue);
+}
+
+.loading-container {
+  height: 0;
+  padding-bottom: 50%;
+  width: 100%;
+}
+
+.loading-container span {
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  top: 30%;
+}
+
+/* Demo Only */
+.api-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

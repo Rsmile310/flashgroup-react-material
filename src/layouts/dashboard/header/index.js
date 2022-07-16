@@ -22,7 +22,7 @@ const pages = [
     id: '#about',
   },
   {
-    text: 'services',
+    text: 'ecosystem',
     id: '#services',
   },
   {

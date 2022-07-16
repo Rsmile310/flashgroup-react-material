@@ -1,16 +1,12 @@
 import { m } from "framer-motion";
 // @mui
 import { styled } from "@mui/material/styles";
-import { Box, Typography, Stack } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 // components
 import { MotionViewport, varFade } from "../animate";
 import useLocales from "../../hooks/useLocales";
 // ----------------------------------------------------------------------
 
-const Img = styled("img")({
-  maxWidth: "100%",
-  height: "auto",
-});
 const BoxStyle = styled(Box)({
   maxWidth: "1288px",
   margin: "20px auto",
@@ -26,16 +22,16 @@ const BoxStyle = styled(Box)({
     top: "32%",
   },
   "& .star1": {
-    right: '24%',
-    top: '4px'
+    right: "24%",
+    top: "4px",
   },
   "& .star2": {
     left: "0",
     bottom: "0",
   },
   "& .star3": {
-    right: '16%',
-    top: '15%'
+    right: "16%",
+    top: "15%",
   },
 });
 
@@ -64,9 +60,21 @@ export default function HomeHero() {
               className="hexagon_coin animate_zoom delay2"
               alt=""
             />
-            <img src="/assets/images/star1.png" className="star1 animate_zoom delay3" alt=""/>
-            <img src="/assets/images/star2.png" className="star2 animate_zoom delay4" alt=""/>
-            <img src="/assets/images/star3.png" className="star3 animate_zoom delay5" alt=""/>
+            <img
+              src="/assets/images/star1.png"
+              className="star1 animate_zoom delay3"
+              alt=""
+            />
+            <img
+              src="/assets/images/star2.png"
+              className="star2 animate_zoom delay4"
+              alt=""
+            />
+            <img
+              src="/assets/images/star3.png"
+              className="star3 animate_zoom delay5"
+              alt=""
+            />
 
             <m.div variants={varFade().inUp}>
               <Typography
@@ -106,60 +114,6 @@ export default function HomeHero() {
               </Box>
             </m.div>
           </Box>
-        </MotionViewport>
-
-        <MotionViewport>
-          <Stack
-            direction={{ xs: "column", sm: "column", md: "row" }}
-            justifyContent="space-between"
-            sx={{ textAlign: "left", paddingTop: "90px" }}
-            id="about"
-          >
-            <Box sx={{ maxWidth: "584px", mb: 4 }}>
-              <m.div variants={varFade().inRight}>
-                <Typography
-                  variant="h2"
-                  sx={{
-                    color: "#fff",
-                    px: "8px",
-                  }}
-                >
-                  {translate("avant_grade_title1")}
-                </Typography>
-              </m.div>
-              <m.div variants={varFade().inRight}>
-                <Typography
-                  variant="h2"
-                  className="grad_text"
-                  sx={{
-                    px: "8px",
-                  }}
-                >
-                  {translate("avant_grade_title2")}
-                </Typography>
-              </m.div>
-              <m.div variants={varFade().inRight}>
-                <Typography
-                  variant="body1"
-                  sx={{
-                    color: "#AB98AE",
-                    px: "8px",
-                    mt: 3,
-                  }}
-                  dangerouslySetInnerHTML={{
-                    __html: translate("avant_grade_text1"),
-                  }}
-                />
-              </m.div>
-            </Box>
-            <m.div variants={varFade().inDown}>
-              <Img
-                src="/assets/images/avantgrade_img.png"
-                width="400px"
-                sx={{ mx: { xs: "auto", sm: "auto", md: 4 } }}
-              />
-            </m.div>
-          </Stack>
         </MotionViewport>
       </BoxStyle>
     </Box>

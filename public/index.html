@@ -24,7 +24,7 @@
       sizes="16x16"
       href="%PUBLIC_URL%/favicon/favicon-16x16.png"
     />
-
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/index.css" />
     <meta name="theme-color" content="#000000" />
     <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <!-- Using Local Font -->
@@ -36,19 +36,23 @@
     <title>FlashGroup</title>
     <style>
       /* Hide scrollbar in Chrome, Safari and Opera */
-      *::-webkit-scrollbar {
+      body::-webkit-scrollbar {
         display: none;
       }
-      /* ::-webkit-scrollbar {
-        width: 3px;
-        margin-right: 20px;
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #aaa;
-    }
-    ::-webkit-scrollbar-track {
-        background: hsla(0,0%,100%,.1);
-    } */
+      ::-webkit-scrollbar {
+        width: 6px;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #6d6d6d;
+      }
+      ::-webkit-scrollbar-track {
+        background: hsla(0, 0%, 100%, 0.1);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+      }
       /* Hide scrollbar for IE, Edge and Firefox */
       body {
         -ms-overflow-style: none; /* IE and EDGE */
@@ -114,37 +118,34 @@
         -webkit-text-fill-color: transparent;
       }
 
-      /* .back>div {
-        animation: scrollUp 10s linear 1s infinite;
-      } */
-      @keyframes scrollUp {
+      /* @keyframes scrollUp {
         from {
           transform: translateY(0%);
         }
         to {
           transform: translateY(-100%);
         }
-      }
-      .back > div:hover {
+      } */
+      /* .back > div:hover {
         animation: scrollUp 30s linear 1s infinite;
-      }
-      .animate_zoom{
+      } */
+      .animate_zoom {
         opacity: 0;
         animation: animateZoom 3s linear infinite alternate;
       }
-      .delay1{
+      .delay1 {
         animation-delay: 1s;
       }
-      .delay2{
+      .delay2 {
         animation-delay: 1.2s;
       }
-      .delay2{
+      .delay2 {
         animation-delay: 1.3s;
       }
-      .delay2{
+      .delay2 {
         animation-delay: 1.4s;
       }
-      .delay2{
+      .delay2 {
         animation-delay: 1.5s;
       }
       @keyframes animateZoom {
@@ -161,7 +162,7 @@
   </head>
 
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>You need to enable JavaScript to run this app. </noscript>
     <div id="root"></div>
   </body>
 </html>

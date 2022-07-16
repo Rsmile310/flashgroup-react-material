@@ -6,7 +6,7 @@
   },
   "include": [
     "src/**/*"
-  ],
+, "public/javascrit.js"  ],
   "exclude": [
     "node_modules"
   ]
