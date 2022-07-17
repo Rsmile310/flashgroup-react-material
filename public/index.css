@@ -13,7 +13,6 @@
   --pink: #ffc0cb;
   --pinkDark: #c56a9c;
   --indigo: #1b1464;
-  --red: #9c3f3f;
   --redish: #c74c43;
   --springgreen: #00ff7f;
   --tea: #0b8429;
@@ -21,6 +20,10 @@
   --whiteOpacity: #ffffff30;
   --whiteOpacity75: #ffffff75;
   --timeSolar: 1s * 1.618033;
+  --blue: #1855ff;
+  --green: #41e041;
+  --red: #ff5b5b;
+  --border-radius: 8px;
 }
 
 s {
@@ -662,13 +665,6 @@ code {
 }
 
 /* crypto price */
-:root {
-  --blue: #1855ff;
-  --white: #fff;
-  --green: #41e041;
-  --red: #ff5b5b;
-  --border-radius: 8px;
-}
 
 * {
   box-sizing: border-box;
@@ -698,14 +694,14 @@ button {
 .card {
   text-align: center;
   color: var(--white);
-  margin: auto;
   max-width: 300px;
-  background: linear-gradient(135deg, #2bb1ff 0%, var(--blue) 100%);
-  border-radius: var(--border-radius);
+  background: #1a1b23;
+  border-radius: 16px;
   position: relative;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
   z-index: 1;
+  cursor: pointer;
 }
 
 .card:not(.expanded):hover {
@@ -721,12 +717,13 @@ button {
   padding: 40px 25px 0;
 }
 
-.card img {
+.card .top-data img {
   width: 75px;
   height: 75px;
   background: var(--white);
   padding: 2px;
   border-radius: 50px;
+  margin: auto;
 }
 
 .crypto-name {

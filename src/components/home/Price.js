@@ -1,29 +1,25 @@
-// import { m } from "framer-motion";
-// @mui
-// import { styled } from "@mui/material/styles";
-// import { Box, Typography, Stack } from "@mui/material";
-// components
-// import { MotionViewport, varFade } from "../animate";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
-import CryptoTracker from "./CryptoTracker";
-// ----------------------------------------------------------------------
-
-const queryClient = new QueryClient();
-
+import { m } from "framer-motion";
+import { Box, Stack } from "@mui/material";
+import BtcPrice from "./bitcoin/BtcPrice";
+import EthPrice from "./ethereum/EthPrice";
+import OztgCard from "./oztgcoin/OztgCard";
+import { MotionViewport, varFade } from "../animate";
 const Price = () => (
-  <QueryClientProvider client={queryClient}>
-    <CryptoTracker cryptoName="bitcoin" />
-    <ReactQueryDevtools />
-    <a
-      className="api-link"
-      href="https://www.coingecko.com/en/api"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Powered by CoinGecko API
-    </a>
-  </QueryClientProvider>
+  <Box>
+    <MotionViewport>
+      <Stack direction="row" justifyContent="center" spacing={2} mt={8}>
+        <m.div variants={varFade().inUp}>
+          <OztgCard />
+        </m.div>
+        <m.div variants={varFade().inUp}>
+          <BtcPrice />
+        </m.div>
+        <m.div variants={varFade().inUp}>
+          <EthPrice />
+        </m.div>
+      </Stack>
+    </MotionViewport>
+  </Box>
 );
 
 export default Price;

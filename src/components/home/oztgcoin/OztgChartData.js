@@ -8,7 +8,7 @@ import {
   VictoryVoronoiContainer
 } from "victory";
 import format from "date-fns/format";
-import { formatPrice } from "./CryptoTracker";
+import { formatPrice } from "../CryptoTracker";
 
 const intervals = [
   {
@@ -42,7 +42,7 @@ const useGetChartData = (cryptoName, interval, options) => {
   );
 };
 
-const ChartData = ({ cryptoName, isExpanded }) => {
+const OztgChartData = ({ cryptoName, isExpanded }) => {
   const [dataInterval, setDataInterval] = useState(intervals[0].value);
 
   const { isLoading, data } = useGetChartData(cryptoName, dataInterval, {
@@ -144,4 +144,4 @@ const ChartData = ({ cryptoName, isExpanded }) => {
   );
 };
 
-export default ChartData;
+export default OztgChartData;
