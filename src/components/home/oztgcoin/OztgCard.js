@@ -7,7 +7,7 @@ export default function OztgCard() {
         <img src="/assets/images/oztg_coin.png" alt="oztg coin" />
         <h3 className="crypto-name">OZTG</h3>
         <h4 className="crypto-price">
-          $1.05<span class="positive">+0.20%</span>
+          $1.05<span className="positive">+0.20%</span>
         </h4>
       </div>
       <div className="chart">

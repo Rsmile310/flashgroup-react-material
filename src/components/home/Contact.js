@@ -10,9 +10,9 @@ import useLocales from "../../hooks/useLocales";
 const BoxStyle = styled(Box)({
   width: "1240px",
   maxWidth: "100%",
-  margin: "86px auto 24px",
+  margin: "0px auto 24px",
   textAlign: "center",
-  padding: "40px 24px",
+  padding: "0px 24px",
   borderRadius: "30px",
 });
 const ButtonStyle = styled(Button)({
@@ -35,7 +35,7 @@ export default function Contact() {
     <MotionViewport>
       <m.div variants={varBounce().in}>
         <BoxStyle id="contact">
-          <Box>
+          <Box pt={10}>
             <Typography
               variant="h2"
               sx={{

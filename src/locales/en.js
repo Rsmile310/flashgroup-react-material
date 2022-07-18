@@ -121,6 +121,7 @@ Your keys provide you ownership of your digital funds and allow you to transact 
   FOOTER_TEXT1: "© Flashgroup 2022, All Rights Reserved",
   TermsConditions: "Terms & Conditions",
   UseofCookies: "Use of Cookies",
+  PrivacyPolicy:"Privacy Policy",
   send: "Send",
 };
 export default en;

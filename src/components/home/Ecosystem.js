@@ -24,7 +24,7 @@ const Card = styled(Box)({
     background: "#1A1B23",
     borderRadius: "25px",
     backfaceVisibility: "hidden",
-    transition: "transform .8s ease",
+    transition: "all 1s ease",
     height: "100%",
   },
   "& .back": {
@@ -35,6 +35,7 @@ const Card = styled(Box)({
     bottom: "0",
     padding: "20px",
     transform: "rotateY(180deg)",
+    opacity: "0",
   },
   "& .back>div": {
     width: "100%",
@@ -65,6 +66,7 @@ const Card = styled(Box)({
   },
   "&:hover .back": {
     transform: "rotateY(0)",
+    opacity: '1'
   },
   "& img": {
     margin: "0 auto",
@@ -79,7 +81,6 @@ export default function Ecosystem() {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    // return () => clearInterval(interval);
     setData(true);
     let stars = document.createElement("div");
     let solar = document.getElementById("solar");

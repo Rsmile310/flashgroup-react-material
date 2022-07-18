@@ -9,15 +9,10 @@ import Price from "../components/home/Price";
 
 // ----------------------------------------------------------------------
 
-export default function HomePage() {
+export default function UseofCookiePage() {
   return (
-    <Page title="Home page">
-      <HomeHero />
-      <Price />
-      <About />
-      <Ecosystem />
+    <Page title="Cookie page" sx={{ px: 0 }}>
       <Blog />
-      <Contact />
     </Page>
   );
 }

@@ -1,9 +1,9 @@
-import { Suspense, lazy } from 'react';
-import { Navigate, useRoutes, useLocation } from 'react-router-dom';
+import { Suspense, lazy } from "react";
+import { Navigate, useRoutes, useLocation } from "react-router-dom";
 // layouts
-import DashboardLayout from '../layouts/dashboard';
+import DashboardLayout from "../layouts/dashboard";
 // components
-import LoadingScreen from '../components/LoadingScreen';
+import LoadingScreen from "../components/LoadingScreen";
 
 // ----------------------------------------------------------------------
 
@@ -12,7 +12,9 @@ const Loadable = (Component) => (props) => {
   const { pathname } = useLocation();
   console.log(pathname);
   return (
-    <Suspense fallback={<LoadingScreen isDashboard={pathname.includes('/dashboard')} />}>
+    <Suspense
+      fallback={<LoadingScreen isDashboard={pathname.includes("/dashboard")} />}
+    >
       <Component {...props} />
     </Suspense>
   );
@@ -21,23 +23,29 @@ const Loadable = (Component) => (props) => {
 export default function Router() {
   return useRoutes([
     {
-      path: '/',
+      path: "/",
       element: <DashboardLayout />,
       children: [
         { element: <HomePage />, index: true },
         // { path: 'home', element: <HomePage /> },
+        { path: "termsconditions", element: <TermsPage /> },
+        { path: "privacypolicy", element: <PrivacyPage /> },
+        { path: "useofcookie", element: <UseofCookiePage /> },
       ],
     },
     {
-      path: '*',
+      path: "*",
       children: [
-        { path: '404', element: <Page404 /> },
-        { path: '*', element: <Navigate to="/404" replace /> },
+        { path: "404", element: <Page404 /> },
+        { path: "*", element: <Navigate to="/404" replace /> },
       ],
     },
-    { path: '*', element: <Navigate to="/404" replace /> },
+    { path: "*", element: <Navigate to="/404" replace /> },
   ]);
 }
 
-const HomePage = Loadable(lazy(() => import('../pages/HomePage')));
-const Page404 = Loadable(lazy(() => import('../pages/Page404')));
+const HomePage = Loadable(lazy(() => import("../pages/HomePage")));
+const TermsPage = Loadable(lazy(() => import("../pages/TermsPage")));
+const Page404 = Loadable(lazy(() => import("../pages/Page404")));
+const PrivacyPage = Loadable(lazy(() => import("../pages/PrivacyPage")));
+const UseofCookiePage = Loadable(lazy(() => import("../pages/UseofCookiePage")));

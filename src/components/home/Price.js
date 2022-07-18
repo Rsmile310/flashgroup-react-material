@@ -7,12 +7,12 @@ import { MotionViewport, varFade } from "../animate";
 const Price = () => (
   <Box>
     <MotionViewport>
-      <Stack direction="row" justifyContent="center" spacing={2} mt={8}>
-        <m.div variants={varFade().inUp}>
-          <OztgCard />
-        </m.div>
+      <Stack direction="row" justifyContent="center" mt={8} flexWrap="wrap">
         <m.div variants={varFade().inUp}>
           <BtcPrice />
+        </m.div>
+        <m.div variants={varFade().inUp}>
+          <OztgCard />
         </m.div>
         <m.div variants={varFade().inUp}>
           <EthPrice />
