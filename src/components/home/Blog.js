@@ -29,7 +29,7 @@ export default function Blog() {
                   px: '8px',
                 }}
               >
-                {translate('Our')}
+                {translate('Flash')}
               </Typography>
               <Typography
                 variant="h2"
@@ -38,7 +38,7 @@ export default function Blog() {
                   px: '8px',
                 }}
               >
-                {translate('Blogs')}
+                {translate('Group News')}
               </Typography>
             </Stack>
           </m.div>

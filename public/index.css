@@ -403,9 +403,24 @@ s {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 30px;
 }
-#sun img{
+@media (max-width: 860px) {
+  #sun {
+    padding: 24px;
+  }
+}
+@media (max-width: 660px) {
+  #sun {
+    padding: 20px;
+  }
+}
+@media (max-width: 520px) {
+  #sun {
+    padding: 12px;
+  }
+}
+#sun img {
   width: 40px;
 }
 #mercury {
