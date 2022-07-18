@@ -26,7 +26,7 @@ const BoxStyle = styled(Box)({
 export default function TermsPage() {
   const { translate } = useLocales();
   return (
-    <Page title="Terms page" sx={{ px: 0 }}>
+    <Page title="Terms page">
       {/* <ScrollUpButton AnimationDuration={0}  /> */}
       <MotionViewport>
         <BoxStyle sx={{ py: 8 }}>

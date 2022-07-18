@@ -8,7 +8,7 @@ import useLocales from "../../../hooks/useLocales";
 
 const FooterStyle = styled("footer")(() => ({
   background: "#07030C",
-  padding: "80px 0",
+  padding: "80px 48px",
   marginTop: "60px",
   color: "#838990",
   borderTop: "2px solid #53536D",
@@ -19,7 +19,7 @@ const FooterStyle = styled("footer")(() => ({
     maxWidth: "1440px",
     marginLeft: "auto",
     marginRight: "auto",
-    padding: "0 16px",
+    padding: "0",
   },
 }));
 const LinkStyle = styled(Link)({
