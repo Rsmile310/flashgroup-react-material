@@ -15,7 +15,7 @@ const en = {
   hero_title2: `Financial Inclusion and Beyond`,
   hero_desc: `The ecosystem of the independent bankers`,
   avant_grade_title1: "We are",
-  avant_grade_title2: "The Avant-Grade",
+  avant_grade_title2: "the Leading Edge",
   avant_grade_text1: `Our solution provides secure services, Utility core coin value with a controlled volatility, high
   potential advertising solution powered by Blockchain and a unique Data retribution services, free
   remittance services, instant wire transfer, and exchanger’s service with the lowest cost in the
@@ -114,12 +114,11 @@ Your keys provide you ownership of your digital funds and allow you to transact 
   Its objectives and values are to improve health benefits and make health solutions accessible, Reduce poverty, Act in respect of the people and respect for human rights. 
   This new kind of CSR uses an advance self-financing solution in addition to private donation the main revenue stream will be brought by the benefit from Flashgroup (1/3 of FlashAdchain profit will go to the CSR).`,
   Blogs: "Blogs",
-  Get_In_touch: "Get In touch",
+  join_our_community: "Join our community",
   contact_content: `Lorem ipsum dolor sit amet, consectetur adi elit. Nunc vulputate. Lorem ipsum dolor sit amet, consectetur adi elit. Nunc vulputate.`,
   JoinDiscord: "Join Discord",
   JoinTelegram: "Join Telegram",
   FOOTER_TEXT1: "© Flashgroup 2022, All Rights Reserved",
-  TermsConditions: "Terms & Conditions",
   UseofCookies: "Use of Cookies",
   PrivacyPolicy: "Privacy Policy",
   send: "Send",

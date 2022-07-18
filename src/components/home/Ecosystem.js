@@ -66,7 +66,7 @@ const Card = styled(Box)({
   },
   "&:hover .back": {
     transform: "rotateY(0)",
-    opacity: '1'
+    opacity: "1",
   },
   "& img": {
     margin: "0 auto",
@@ -142,7 +142,9 @@ export default function Ecosystem() {
           <m.div variants={varFade().inDown}>
             <div id="solar">
               <div className="comet"></div>
-              <div id="sun"></div>
+              <div id="sun">
+                <Box component="img" src="/logo/logo_one.png" />
+              </div>
               <div id="mercury"></div>
               <div id="venus"></div>
               <div id="earth"></div>
@@ -197,7 +199,7 @@ export default function Ecosystem() {
                     </Box>
                     <Box className="back">
                       <Box p={1}>
-                        <Box>
+                        <Box textAlign="justify">
                           <Typography variant="h4" color="white">
                             {data.name}
                           </Typography>
@@ -205,7 +207,6 @@ export default function Ecosystem() {
                             variant="body2"
                             fontSize="16px"
                             color="#AB98AE"
-                            textAlign="left"
                             dangerouslySetInnerHTML={{
                               __html: translate(data.desc),
                             }}

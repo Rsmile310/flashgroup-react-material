@@ -43,7 +43,7 @@ export default function Contact() {
                 px: "8px",
               }}
             >
-              {translate("Get_In_touch")}
+              {translate("join_our_community")}
             </Typography>
             <Box mt={5}>
               <ButtonStyle

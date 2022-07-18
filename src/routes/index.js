@@ -28,7 +28,6 @@ export default function Router() {
       children: [
         { element: <HomePage />, index: true },
         // { path: 'home', element: <HomePage /> },
-        { path: "termsconditions", element: <TermsPage /> },
         { path: "privacypolicy", element: <PrivacyPage /> },
         { path: "useofcookie", element: <UseofCookiePage /> },
       ],
@@ -45,7 +44,6 @@ export default function Router() {
 }
 
 const HomePage = Loadable(lazy(() => import("../pages/HomePage")));
-const TermsPage = Loadable(lazy(() => import("../pages/TermsPage")));
 const Page404 = Loadable(lazy(() => import("../pages/Page404")));
 const PrivacyPage = Loadable(lazy(() => import("../pages/PrivacyPage")));
 const UseofCookiePage = Loadable(lazy(() => import("../pages/UseofCookiePage")));

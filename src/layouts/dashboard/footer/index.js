@@ -36,10 +36,6 @@ export default function Footer() {
   const { translate } = useLocales();
   const footerData = [
     {
-      text: "TermsConditions",
-      url: "termsconditions",
-    },
-    {
       text: "PrivacyPolicy",
       url: "privacypolicy",
     },

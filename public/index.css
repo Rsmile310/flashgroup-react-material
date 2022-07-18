@@ -400,8 +400,14 @@ s {
   height: 10vmin;
   position: absolute;
   width: 10vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
-
+#sun img{
+  width: 40px;
+}
 #mercury {
   animation: mercury calc(var(--timeSolar) * 4) linear infinite;
   background: radial-gradient(
