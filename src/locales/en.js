@@ -82,7 +82,7 @@ Your keys provide you ownership of your digital funds and allow you to transact 
   situation.`,
   Flashcryptostation_desc: `Allow everyone access to the Flash ecosystem, regardless of their geographic or personal
   situation.<br/><br/>
-  The current advertising model is not effective and doesn’t optimize the marketing investments. We are working on a blockchain advertising solution to solve many of the digital`,
+  The current advertising model is not effective and doesn’t optimize the marketing investments. We are working on a blockchain advertising solution to solve many of the digital.`,
   FlashGo_title: `The essential mission of FlashGO is the design of a SmartCity utility ecosystem also termed "the
   social marketplace".`,
   FlashGo_desc: `The essential mission of FlashGO is the design of a SmartCity utility ecosystem also termed "the
@@ -95,7 +95,7 @@ Your keys provide you ownership of your digital funds and allow you to transact 
   The WebtoStore will have the implementation of packaged offers together with the multiexchange loyalty system without also forgetting the democratization of OZTG our UtilityCoin
   solution thanks to the use of the electronic travel book and its improved cash back system.<br/><br/>
   A combination of offers for transport with accurate online offers, ordering and shipping service,
-  multi crypto payment is one of the Sapian Group systems dedicated to the socialFi sector`,
+  multi crypto payment is one of the Flash Group systems dedicated to the socialFi sector.`,
   FlashData_title: `FlashData will use the Ozeety blockchain and could allow all kinds of fraud and transparency to
   be solved through the RTB advertising marketplace.`,
   FlashData_desc: `FlashData will use the Ozeety blockchain and could allow all kinds of fraud and transparency to
@@ -121,7 +121,7 @@ Your keys provide you ownership of your digital funds and allow you to transact 
   FOOTER_TEXT1: "© Flashgroup 2022, All Rights Reserved",
   TermsConditions: "Terms & Conditions",
   UseofCookies: "Use of Cookies",
-  PrivacyPolicy:"Privacy Policy",
+  PrivacyPolicy: "Privacy Policy",
   send: "Send",
 };
 export default en;
