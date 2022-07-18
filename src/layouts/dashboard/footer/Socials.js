@@ -1,9 +1,5 @@
 const Socials = [
   {
-    img: '/assets/images/discord.png',
-    url: 'https://discord.gg/3mEUgFHV',
-  },
-  {
     img: '/assets/images/telegram.png',
     url: 'https://t.me/FLASHMONI_ANNOUNCEMENTS',
   },

@@ -46,15 +46,6 @@ export default function Contact() {
               {translate("Get_In_touch")}
             </Typography>
             <Box mt={5}>
-              <ButtonStyle href="https://discord.gg/3mEUgFHV" target="_blank">
-                <Iconify
-                  icon={"akar-icons:discord-fill"}
-                  width={20}
-                  height={20}
-                  mr={1}
-                />
-                {translate("JoinDiscord")}
-              </ButtonStyle>
               <ButtonStyle
                 href="https://t.me/FLASHMONI_ANNOUNCEMENTS"
                 target="_blank"
