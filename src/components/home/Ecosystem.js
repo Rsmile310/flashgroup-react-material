@@ -109,16 +109,14 @@ export default function Ecosystem() {
                 variant="h2"
                 sx={{
                   color: "#fff",
-                  px: "8px",
                 }}
               >
-                {translate("Our")}
+                {translate("Our")}&nbsp;
               </Typography>
               <Typography
                 variant="h2"
                 className="grad_text"
                 sx={{
-                  px: "8px",
                 }}
               >
                 {translate("Ecosystem")}

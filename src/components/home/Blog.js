@@ -1,17 +1,17 @@
-import { m } from 'framer-motion';
+import { m } from "framer-motion";
 // @mui
-import { styled } from '@mui/material/styles';
-import { Box, Typography, Stack, Skeleton } from '@mui/material';
+import { styled } from "@mui/material/styles";
+import { Box, Typography, Stack, Skeleton } from "@mui/material";
 // components
-import { MotionViewport, varFade } from '../animate';
-import useLocales from '../../hooks/useLocales';
+import { MotionViewport, varFade } from "../animate";
+import useLocales from "../../hooks/useLocales";
 
 const BoxStyle = styled(Box)({
-  width: '1280px',
-  maxWidth: '100%',
-  margin: '0 auto',
-  textAlign: 'center',
-  padding: '80px 24px 0',
+  width: "1280px",
+  maxWidth: "100%",
+  margin: "0 auto",
+  textAlign: "center",
+  padding: "80px 24px 0",
 });
 
 export default function Blog() {
@@ -25,39 +25,52 @@ export default function Blog() {
               <Typography
                 variant="h2"
                 sx={{
-                  color: '#fff',
-                  px: '8px',
+                  color: "#fff",
                 }}
               >
-                {translate('Flash')}
+                {translate("Flash")}&nbsp;
               </Typography>
-              <Typography
-                variant="h2"
-                className='grad_text'
-                sx={{
-                  px: '8px',
-                }}
-              >
-                {translate('Group News')}
+              <Typography variant="h2" className="grad_text" sx={{}}>
+                {translate("Group News")}
               </Typography>
             </Stack>
           </m.div>
-          <Stack px={4} direction="row" flexWrap='wrap' justifyContent="center" mt={4}>
+          <Stack
+            px={4}
+            direction="row"
+            flexWrap="wrap"
+            justifyContent="center"
+            mt={4}
+          >
             <m.div variants={varFade().inDown}>
               <Stack
                 spacing={2}
                 mr={2}
                 mb={2}
                 py={2}
-                sx={{ border: '2px solid #B158E2', borderRadius: '8px', background: '#fff' }}
+                sx={{
+                  border: "2px solid #B158E2",
+                  borderRadius: "8px",
+                  background: "#fff",
+                }}
               >
-                <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ px: '8px' }}>
+                <Stack
+                  direction="row"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  sx={{ px: "8px" }}
+                >
                   <Skeleton variant="text" width={180} height={30} />
                   <Skeleton variant="circular" width={40} height={40} />
                 </Stack>
                 <Skeleton variant="rectangular" width="100%" height={170} />
-                <Stack sx={{ px: '8px' }}>
-                  <Skeleton variant="text" width={276} height={30} sx={{ mb: 2 }} />
+                <Stack sx={{ px: "8px" }}>
+                  <Skeleton
+                    variant="text"
+                    width={276}
+                    height={30}
+                    sx={{ mb: 2 }}
+                  />
                   <Skeleton variant="text" width={140} height={30} />
                 </Stack>
               </Stack>
@@ -68,15 +81,29 @@ export default function Blog() {
                 mr={2}
                 mb={2}
                 py={2}
-                sx={{ border: '2px solid #B158E2', borderRadius: '8px', background: '#fff' }}
+                sx={{
+                  border: "2px solid #B158E2",
+                  borderRadius: "8px",
+                  background: "#fff",
+                }}
               >
-                <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ px: '8px' }}>
+                <Stack
+                  direction="row"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  sx={{ px: "8px" }}
+                >
                   <Skeleton variant="text" width={180} height={30} />
                   <Skeleton variant="circular" width={40} height={40} />
                 </Stack>
                 <Skeleton variant="rectangular" width="100%" height={170} />
-                <Stack sx={{ px: '8px' }}>
-                  <Skeleton variant="text" width={276} height={30} sx={{ mb: 2 }} />
+                <Stack sx={{ px: "8px" }}>
+                  <Skeleton
+                    variant="text"
+                    width={276}
+                    height={30}
+                    sx={{ mb: 2 }}
+                  />
                   <Skeleton variant="text" width={140} height={30} />
                 </Stack>
               </Stack>
@@ -87,15 +114,29 @@ export default function Blog() {
                 mr={2}
                 mb={2}
                 py={2}
-                sx={{ border: '2px solid #B158E2', borderRadius: '8px', background: '#fff' }}
+                sx={{
+                  border: "2px solid #B158E2",
+                  borderRadius: "8px",
+                  background: "#fff",
+                }}
               >
-                <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ px: '8px' }}>
+                <Stack
+                  direction="row"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  sx={{ px: "8px" }}
+                >
                   <Skeleton variant="text" width={180} height={30} />
                   <Skeleton variant="circular" width={40} height={40} />
                 </Stack>
                 <Skeleton variant="rectangular" width="100%" height={170} />
-                <Stack sx={{ px: '8px' }}>
-                  <Skeleton variant="text" width={276} height={30} sx={{ mb: 2 }} />
+                <Stack sx={{ px: "8px" }}>
+                  <Skeleton
+                    variant="text"
+                    width={276}
+                    height={30}
+                    sx={{ mb: 2 }}
+                  />
                   <Skeleton variant="text" width={140} height={30} />
                 </Stack>
               </Stack>
