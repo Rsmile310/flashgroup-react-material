@@ -1,7 +1,7 @@
 // components
 import Page from "../components/Page";
 import { m } from "framer-motion";
-import { Box, Typography, Stack, Skeleton } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 // components
 import { MotionViewport, varFade } from "../components/animate";
 import useLocales from "../hooks/useLocales";
