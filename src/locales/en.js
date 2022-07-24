@@ -28,9 +28,7 @@ const en = {
   ecosystem_text1: `Flash Group, willing to generate economic changes through DLT, facilitate access to essential
   financial services to empower the unbanked and even overbanked people to achieve our goal, we
   created a unique transversal solution that combines hardware and software and efficiency.`,
-  Ozeety_title: `Ozeety Blockchain implements all current technologies essential to maximizing a global solution's
-  potential and it's capable of addressing all the problems that arise in modern financial
-  environment.`,
+  Ozeety_title: `Ozeety Blockchain implements all current technologies essential to maximizing a global solution's potential...`,
   Ozeety_desc: `Ozeety Blockchain implements all current technologies essential to maximizing a global solution's
   potential and it's capable of addressing all the problems that arise in modern financial
   environment.<br/><br/>
@@ -44,8 +42,7 @@ const en = {
   masternode technology used to stabilize the community and offer all it's features in a stable
   manner.<br/><br/>
   Each Masternode is secured with a 10K OZTG collateral.`,
-  FlashX_title: `Make use of our fully licensed and simplistic exchange to buy and sell select digital currencies with the
-  lowest spreads in the market updated in real time.`,
+  FlashX_title: `Make use of our fully licensed and simplistic exchange to buy and sell select digital currencies...`,
   FlashX_desc: `Make use of our fully licensed and simplistic exchange to buy and sell select digital currencies with the
   lowest spreads in the market updated in real time.<br/><br/>
   Funds are safe: Your funds will always be secure and will not be vulnerable to hacks and third party
@@ -62,7 +59,7 @@ FlashWallet.<br/><br/>
 Flashwallets don't technically store your crypto, your holdings are on the blockchain and can only be
 accessed using your private key.<br/><br/>
 Your keys provide you ownership of your digital funds and allow you to transact at will.`,
-  OZTCard_title: `All-in-one cold storage biometric smart card.`,
+  OZTCard_title: `OZT card allows you to spend your crypto online, in-store, or at an ATM...`,
   OZTCard_desc: `All-in-one cold storage biometric smart card.<br/><br/>
   OZT card allows you to spend your crypto online, in-store, or at an ATM.<br/>
   In terms of fees and core benefits, this will depend on one key factor:<br/><br/>
@@ -96,8 +93,7 @@ Your keys provide you ownership of your digital funds and allow you to transact 
   solution thanks to the use of the electronic travel book and its improved cash back system.<br/><br/>
   A combination of offers for transport with accurate online offers, ordering and shipping service,
   multi crypto payment is one of the Flash Group systems dedicated to the socialFi sector.`,
-  FlashData_title: `FlashData will use the Ozeety blockchain and could allow all kinds of fraud and transparency to
-  be solved through the RTB advertising marketplace.`,
+  FlashData_title: `FlashData will use the Ozeety blockchain and could allow all kinds of fraud and transparency...`,
   FlashData_desc: `FlashData will use the Ozeety blockchain and could allow all kinds of fraud and transparency to
   be solved through the RTB advertising marketplace.<br/><br/>
   User data offers a way to better understand and meet the demands and needs of our customers.
@@ -108,8 +104,7 @@ Your keys provide you ownership of your digital funds and allow you to transact 
   (known cookies). FlashData will use the Ozeety blockchain and could allow all kinds of fraud and
   transparency to be solved through the RTB advertising marketplace. It will also allow truthful
   redistribution of user registrations monetization, paying 1/3 of revenue into your FlashX account.`,
-  FlashCare_title: `The FlashCare Foundation has been created to make natural health solutions accessible to the
-  most disadvantaged population.`,
+  FlashCare_title: `The Flashcare foundation has been set up to make natural health solutions...`,
   FlashCare_desc: `The Flashcare foundation has been set up to make natural health solutions accessible to the most disadvantaged population.<br/><br/>
   Its objectives and values are to improve health benefits and make health solutions accessible, Reduce poverty, Act in respect of the people and respect for human rights. 
   This new kind of CSR uses an advance self-financing solution in addition to private donation the main revenue stream will be brought by the benefit from Flashgroup (1/3 of FlashAdchain profit will go to the CSR).`,

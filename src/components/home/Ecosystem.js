@@ -198,7 +198,7 @@ export default function Ecosystem() {
                     <Box className="back">
                       <Box p={1}>
                         <Box textAlign="justify">
-                          <Typography variant="h4" color="white">
+                          <Typography variant="h4" color="white" textAlign="center">
                             {data.name}
                           </Typography>
                           <Typography

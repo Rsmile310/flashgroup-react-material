@@ -28,10 +28,10 @@ export default function Blog() {
                   color: "#fff",
                 }}
               >
-                {translate("Flash")}&nbsp;
+                {translate("Flash Group")}&nbsp;
               </Typography>
               <Typography variant="h2" className="grad_text" sx={{}}>
-                {translate("Group News")}
+                {translate("News")}
               </Typography>
             </Stack>
           </m.div>

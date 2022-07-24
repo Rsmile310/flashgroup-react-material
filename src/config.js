@@ -1,5 +1,5 @@
 // @mui
-import { enUS, frFR } from '@mui/material/locale';
+import { enUS, frFR, esES } from "@mui/material/locale";
 
 // LAYOUT
 // ----------------------------------------------------------------------
@@ -31,11 +31,11 @@ export const ICON = {
 // ----------------------------------------------------------------------
 
 export const defaultSettings = {
-  themeMode: 'light',
-  themeDirection: 'ltr',
-  themeContrast: 'default',
-  themeLayout: 'horizontal',
-  themeColorPresets: 'blue',
+  themeMode: "light",
+  themeDirection: "ltr",
+  themeContrast: "default",
+  themeLayout: "horizontal",
+  themeColorPresets: "blue",
   themeStretch: false,
 };
 
@@ -45,17 +45,23 @@ export const defaultSettings = {
 
 export const allLangs = [
   {
-    label: 'English',
-    value: 'en',
+    label: "English",
+    value: "en",
     systemValue: enUS,
-    icon: '/assets/icons/flags/ic_flag_en.svg',
+    icon: "/assets/icons/flags/ic_flag_en.svg",
   },
   {
-    label: 'French',
-    value: 'fr',
+    label: "French",
+    value: "fr",
     systemValue: frFR,
-    icon: '/assets/icons/flags/ic_flag_fr.svg',
-  }
+    icon: "/assets/icons/flags/ic_flag_fr.svg",
+  },
+  {
+    label: "Spanish",
+    value: "es",
+    systemValue: esES,
+    icon: "/assets/icons/flags/ic_flag_sp.svg",
+  },
 ];
 
 export const defaultLang = allLangs[0]; // English

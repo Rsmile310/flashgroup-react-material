@@ -1,7 +1,7 @@
 import { m } from "framer-motion";
 // @mui
 import { styled } from "@mui/material/styles";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, Stack } from "@mui/material";
 import Iconify from "../Iconify";
 // components
 import { MotionViewport, varBounce } from "../animate";
@@ -36,15 +36,20 @@ export default function Contact() {
       <m.div variants={varBounce().in}>
         <BoxStyle id="contact">
           <Box pt={10}>
-            <Typography
-              variant="h2"
-              sx={{
-                color: "#fff",
-                px: "8px",
-              }}
-            >
-              {translate("join_our_community")}
-            </Typography>
+            <Stack direction="row" justifyContent="center">
+              <Typography
+                variant="h2"
+                sx={{
+                  color: "#fff",
+                  px: "8px",
+                }}
+              >
+                {translate("Join our")}
+              </Typography>
+              <Typography variant="h2" className="grad_text" sx={{}}>
+                {translate("community")}
+              </Typography>
+            </Stack>
             <Box mt={5}>
               <ButtonStyle
                 href="https://t.me/FLASHMONI_ANNOUNCEMENTS"
