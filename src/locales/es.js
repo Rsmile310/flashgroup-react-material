@@ -13,14 +13,12 @@ const es = {
   hero_title1: `Somos el Grupo Flash`,
   hero_title2: `Inclusión financiera y más allá`,
   hero_desc: `El ecosistema de los banqueros independientes.`,
-  avant_grade_title1: "Somos el grado de vanguardia",
-  avant_grade_title2: "the Leading Edge",
+  avant_grade_title1: "Somos el ",
+  avant_grade_title2: "grado de vanguardia",
   avant_grade_text1: `Nuestra solución proporciona servicios seguros, valor de moneda central de utilidad con una volatilidad controlada, 
   solución de publicidad de alto potencial impulsada por Blockchain y un servicio único de retribución de datos, servicios de remesas gratuitas, 
   transferencia bancaria instantánea y servicio de cambio de monedas criptográficas con el menor coste del mercado.<br/><br/>
-  Our technology combines regular financial services and blockchain-powered finance technology
-  to bring users an efficient solution and empowerment in their daily financial transactions.`,
-  avant_grade_text2: `Nuestra tecnología combina los servicios financieros habituales y la tecnología financiera impulsada por blockchain para ofrecer a los usuarios una solución eficiente y un empoderamiento en sus transacciones financieras diarias.`,
+  Nuestra tecnología combina los servicios financieros habituales y la tecnología financiera impulsada por blockchain para ofrecer a los usuarios una solución eficiente y un empoderamiento en sus transacciones financieras diarias.`,
   Our: "Nuestro",
   Ecosystem: "Ecosistema",
   // ecosystem
@@ -99,9 +97,10 @@ const es = {
   <br/><br/>
   Este nuevo tipo de RSC utiliza una solución avanzada de autofinanciación, además de la donación privada. La principal fuente de ingresos procederá de los beneficios del Grupo Flash (1/3 de los beneficios de FlashData se destinará a la RSC).`,
   Blogs: "Blogs",
-  join_our_community: "Join our community",
-  contact_content: `Lorem ipsum dolor sit amet, consectetur adi elit. Nunc vulputate. Lorem ipsum dolor sit amet, consectetur adi elit. Nunc vulputate.`,
-  JoinDiscord: "Join Discord",
+  Flash_Group:"Grupo Flash",
+  News: "Noticias",
+  Join_our: "Únete a nuestro",
+  community: "comunidad",
   JoinTelegram: "Join Telegram",
   FOOTER_TEXT1: "© Flashgroup 2022, All Rights Reserved",
   UseofCookies: "Use of Cookies",

@@ -44,7 +44,7 @@ export default function Contact() {
                   px: "8px",
                 }}
               >
-                {translate("Join our")}
+                {translate("Join_our")}
               </Typography>
               <Typography variant="h2" className="grad_text" sx={{}}>
                 {translate("community")}

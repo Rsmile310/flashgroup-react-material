@@ -28,7 +28,7 @@ export default function Blog() {
                   color: "#fff",
                 }}
               >
-                {translate("Flash Group")}&nbsp;
+                {translate("Flash_Group")}&nbsp;
               </Typography>
               <Typography variant="h2" className="grad_text" sx={{}}>
                 {translate("News")}

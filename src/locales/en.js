@@ -22,8 +22,6 @@ const en = {
   market.<br/><br/>
   Our technology combines regular financial services and blockchain-powered finance technology
   to bring users an efficient solution and empowerment in their daily financial transactions.`,
-  avant_grade_text2: `Our technology combines regular financial services and blockchain-powered finance technology to 
-  bring users an efficient solution and empowerment in their daily financial transactions.`,
   // ecosystem
   ecosystem_text1: `Flash Group, willing to generate economic changes through DLT, facilitate access to essential
   financial services to empower the unbanked and even overbanked people to achieve our goal, we
@@ -51,7 +49,7 @@ const en = {
   Ease of Access: Gain easy access to our exchange through any of the solutions in our ecosystem, create an
   account and make transactions instantly using our OZTG coin and select cryptocurrencies. 
   `,
-  FlashWallet_title: `Use our fully licensed wallet service to make instant bank transfers in multiple currencies.`,
+  FlashWallet_title: `Use our fully licensed wallet service to make instant bank transfers in multiple currencies...`,
   FlashWallet_desc: `Use our fully licensed wallet service to make instant bank transfers in multiple currencies.<br/><br/>
 Send money anywhere in the world instantly or withdraw to your FlashX account at the cost of a local
 transaction and also pay merchants and other services with the OZTCARD which is linked to your
@@ -109,7 +107,8 @@ Your keys provide you ownership of your digital funds and allow you to transact 
   Its objectives and values are to improve health benefits and make health solutions accessible, Reduce poverty, Act in respect of the people and respect for human rights. 
   This new kind of CSR uses an advance self-financing solution in addition to private donation the main revenue stream will be brought by the benefit from Flashgroup (1/3 of FlashAdchain profit will go to the CSR).`,
   Blogs: "Blogs",
-  join_our_community: "Join our community",
+  Join_our: "Join our",
+  community: "community",
   contact_content: `Lorem ipsum dolor sit amet, consectetur adi elit. Nunc vulputate. Lorem ipsum dolor sit amet, consectetur adi elit. Nunc vulputate.`,
   JoinDiscord: "Join Discord",
   JoinTelegram: "Join Telegram",
